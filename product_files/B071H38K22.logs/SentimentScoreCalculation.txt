@@ -1,0 +1,96 @@
+====================================
+=====COMMENT SENTIMENT ANALYSIS=====
+====================================
+For Comment #1:
+	====>> SENTIMENT SCORE: 0.0
+For Comment #2:
+	usable -> 1
+	unbelievably -> -1
+	complicated -> -1
+	waste -> -1
+	====>> SENTIMENT SCORE: -0.5
+For Comment #3:
+	waste -> -1
+	work -> 1
+	strong -> 1
+	enough -> 1
+	refund -> 1
+	crap -> -1
+	====>> SENTIMENT SCORE: 0.3333
+For Comment #4:
+	====>> SENTIMENT SCORE: 0.0
+For Comment #5:
+	impossible -> -1
+	hang -> -1
+	like -> 1
+	worth -> 1
+	====>> SENTIMENT SCORE: 0.0
+For Comment #6:
+	unable -> -1
+	ripped -> -1
+	waste -> -1
+	====>> SENTIMENT SCORE: -1.0
+For Comment #7:
+	loved -> 1
+	successfully -> 1
+	ripped -> -1
+	awful -> -1
+	cheap -> -1
+	recommend -> 1
+	====>> SENTIMENT SCORE: 0.0
+For Comment #8:
+	====>> SENTIMENT SCORE: 0.0
+For Comment #9:
+	easy -> 1
+	slap -> -1
+	enough -> 1
+	worth -> 1
+	tedious -> -1
+	====>> SENTIMENT SCORE: 0.2
+For Comment #10:
+	love -> 1
+	tricky -> -1
+	nice -> 1
+	====>> SENTIMENT SCORE: 0.3333
+For Comment #11:
+	====>> SENTIMENT SCORE: 0.0
+For Comment #12:
+	hard -> -1
+	====>> SENTIMENT SCORE: -1.0
+For Comment #13:
+	messed -> -1
+	====>> SENTIMENT SCORE: -1.0
+For Comment #14:
+	wonder -> 1
+	cheap -> -1
+	better -> 1
+	====>> SENTIMENT SCORE: 0.3333
+For Comment #15:
+	hard -> -1
+	fell -> -1
+	like -> 1
+	garbage -> -1
+	lie -> -1
+	like -> 1
+	====>> SENTIMENT SCORE: -0.3333
+For Comment #16:
+	beware -> -1
+	pretty -> 1
+	neat -> 1
+	====>> SENTIMENT SCORE: 0.3333
+For Comment #17:
+	hard -> -1
+	wrinkled -> -1
+	confusing -> -1
+	====>> SENTIMENT SCORE: -1.0
+For Comment #18:
+	pretty -> 1
+	ruined -> -1
+	====>> SENTIMENT SCORE: 0.0
+For Comment #19:
+	====>> SENTIMENT SCORE: 0.0
+For Comment #20:
+	pretty -> 1
+	difficult -> -1
+	hang -> -1
+	====>> SENTIMENT SCORE: -0.3333
