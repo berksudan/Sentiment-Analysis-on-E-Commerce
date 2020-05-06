@@ -1,0 +1,30 @@
+==================================
+=====KNN CLUSTERING for K = 3=====
+==================================
+--> Size of Train set: 11
+--> Size of Test set: 8
+	Test Instance #1:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #2:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #3:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #4:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #5:
+			Predicted => 'neg'
+			Actual    => 'pos'
+	Test Instance #6:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #7:
+			Predicted => 'neg'
+			Actual    => 'neg'
+	Test Instance #8:
+			Predicted => 'neg'
+			Actual    => 'neg'
+Accuracy: 87.500 %
