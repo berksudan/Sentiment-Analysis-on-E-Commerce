@@ -1,2 +1,2 @@
-# Sentiment-Analysis-on-E-Commerce
-Sentiment Analysis of Amazon Customer Reviews
+# Sentiment Analysis on E-Commerce
+Crawled Amazon E-Commerce Website, analyzed & visualized intents of customers. Used: NLP, PyQT5, Python3, Beautiful Soup 4.
