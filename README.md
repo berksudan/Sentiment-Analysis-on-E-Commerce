@@ -32,20 +32,14 @@ Note that, since this module does not use Amazon API to access the website, your
 
 ## Screenshots of GUI Screens
 
-<figure>
-  <img src="./docs/enter_screen_product_id.png" alt="Screen of Entering Product ID"/>
-  <figcaption>Screen of Entering Product ID</figcaption>
-</figure>
+- Screen of Entering Product ID
+![Screen of Entering Product ID](./docs/enter_screen_product_id.png)
 
-<figure>
-  <img src="./docs/enter_screen_product_url.png" alt="Screen of Entering Product URL"/>
-  <figcaption>Screen of Entering Product URL</figcaption>
-</figure>
+- Screen of Entering Product URL
+![Screen of Entering Product URL](./docs/enter_screen_product_url.png)
 
-<figure>
-  <img src="./docs/product_sentiment_results_screen.png" alt="Screen of Sentiment Results"/>
-  <figcaption>Screen of Sentiment Results</figcaption>
-</figure>
+- Screen of Sentiment Results
+![Screen of Sentiment Results](./docs/product_sentiment_results_screen.png)
 
 ## Folder Structure
 ```bash
