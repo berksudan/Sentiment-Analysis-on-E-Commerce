@@ -1,9 +1,15 @@
 # Sentiment Analysis on E-Commerce
 
 ## Abstract
-A program has been developed to find the desired product on the Amazon E-Commerce site, collect comments, analyze the sentiments of the comments, and also analyze the sales times of the products.
+A program has been developed to find the desired product on the Amazon E-Commerce site, collect comments, analyze the sentiments of the comments, and also analyze the sales times of the products. Amazon E-Commerce Website is crawled, analyzed & visualized intents of customers.
 
-As Amazon E-Commerce Website is crawled, analyzed & visualized intents of customers.
+## Motivation
+Comments for the products on e-commerce websites indicate the reaction of the products directly. User feedbacks can be used in order to improve the quality of the products which will be put on the market in the future and also this information can be used to ensure absolute customer satisfaction. There may be up to thousands of comments for each product and may be thousands of products in a single e-commerce website. Therefore, it’s hard for companies to examine all comments and understand if people liked the products or not.
+
+In this project, a program is implemented to retrieve the comments for hundreds of products, analyze them in various ways and extract the useful information out of these comments. Comments are reduced to several the keywords which are provided by a dictionary dataset. With the help of the sentimental analysis, we can understand which products have positive or negative influence on customers, results in the sale strategies being improved.
+
+## The Methods
+Python programming language is used for this project, since there are plenty of handy libraries in Python which can used for statistical analysis. Sentiment analysis is applied for analyzing the comments. Therefore, a dictionary consists of words (such as hate, like, love, bad, good, awful, etc.) is used. Each word in the dictionary has a sentiment score either -1 or 1. "1" represents the positive reaction while "-1" represents the negative reaction. Dictionary words are looked up in the comments and exact matches are considered only. Moreover, a web crawler is implemented in this project in order to find the products in a given e-commerce website and retrieve all comments for the product. In addition, the crawler retrieves the date of comments and uses this information in order to find out whether the amount of the product sales change over time in terms of years, months and days.
 
 ## Used Modules
 - Python 3 as programming language
