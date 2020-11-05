@@ -19,7 +19,7 @@ You can build the project by executing following bash file:
 ./build.sh
 ```
 
-Build instructions for Linux is provided only, you can use the equivalent commands for other operating-systems.
+Build instructions are provided for Linux only, you can use the equivalent commands for other operating-systems.
 
 ## Run
 After build, you can enter the following command in your Linux Terminal to run the program:
