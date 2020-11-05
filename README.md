@@ -1,7 +1,7 @@
 # Sentiment Analysis on E-Commerce
 
 ## Abstract
-A program has been developed to find the desired product on the Amazon E-Commerce site, collect comments, analyze the sentiments of the comments, and also analyze the sales times of the products. Amazon E-Commerce Website is crawled, analyzed & visualized intents of customers.
+A program has been developed to find the desired product on the Amazon E-Commerce site, collect comments, analyze the sentiments of the comments, and also analyze the sales times of the products.
 
 ## Motivation
 Comments for the products on e-commerce websites indicate the reaction of the products directly. User feedbacks can be used in order to improve the quality of the products which will be put on the market in the future and also this information can be used to ensure absolute customer satisfaction. There may be up to thousands of comments for each product and may be thousands of products in a single e-commerce website. Therefore, it’s hard for companies to examine all comments and understand if people liked the products or not.
