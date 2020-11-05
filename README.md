@@ -8,7 +8,7 @@ Comments for the products on e-commerce websites indicate the reaction of the pr
 
 In this project, a program is implemented to retrieve the comments for hundreds of products, analyze them in various ways and extract the useful information out of these comments. Comments are reduced to several the keywords which are provided by a dictionary dataset. With the help of the sentimental analysis, we can understand which products have positive or negative influence on customers, results in the sale strategies being improved.
 
-## The Methods
+## Methodology
 Python programming language is used for this project, since there are plenty of handy libraries in Python which can used for statistical analysis. Sentiment analysis is applied for analyzing the comments. Therefore, a dictionary consists of words (such as hate, like, love, bad, good, awful, etc.) is used. Each word in the dictionary has a sentiment score either -1 or 1. "1" represents the positive reaction while "-1" represents the negative reaction. Dictionary words are looked up in the comments and exact matches are considered only. Moreover, a web crawler is implemented in this project in order to find the products in a given e-commerce website and retrieve all comments for the product. In addition, the crawler retrieves the date of comments and uses this information in order to find out whether the amount of the product sales change over time in terms of years, months and days.
 
 ## Used Modules
