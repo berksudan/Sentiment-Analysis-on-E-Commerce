@@ -7,8 +7,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import QDialog, QPushButton, QLabel
 
 ############ GLOBAL VARIABLES ############
-GUI_ASSETS_PATH = 'gui_assets//'
-
+GUI_ASSETS_PATH = 'gui_assets/'
 
 ##########################################
 
@@ -34,18 +33,7 @@ class CommentAnalyzerApp(QtGui.QMainWindow, design.Ui_MainWindow):
 
         QObject.connect(self.checkBox_URL, SIGNAL("clicked()"), self.checkbox_url_control)
         QObject.connect(self.checkBox_ProdID, SIGNAL("clicked()"), self.checkbox_prodid_control)
-        # QObject.connect(self.exitButton, SIGNAL("clicked()"), self.exittt())
-        #
-
-        ###################################################
         w = self.centralwidget
-        # b = QPushButton(w)
-
-        # b.setText("Hello World!")
-        # b.move(50, 50)
-
-
-        # w.setWindowTitle("PyQt Dialog demo")
         w.show()
 
     def checkbox_url_control(self):

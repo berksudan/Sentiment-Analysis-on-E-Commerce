@@ -12,14 +12,14 @@ from bs4 import BeautifulSoup as BSoup
 import csv
 import shutil
 import matplotlib.pyplot as plot
-
-############ GLOBAL VARIABLES ############
 from numpy import mean
 
-DIR_PATH = 'product_files//'
+############ GLOBAL VARIABLES ############
+
+DIR_PATH = 'product_files/'
 UNPROCESSED_COMMENTS_POSTFIX = '.comments_unprocessed.csv'
 PROCESSED_COMMENTS_POSTFIX = '.comments_processed.csv'
-LOG_DIR_PATH_POSTFIX = '.logs//'
+LOG_DIR_PATH_POSTFIX = '.logs/'
 PROD_IMG_POSTFIX = '.image.jpg'
 PROD_INFO_POSTFIX = '.info.txt'
 PROD_PLOT_POSTFIX = '.plot.png'
@@ -55,7 +55,7 @@ class UrlOperations:
     @staticmethod
     def compute_html_content(url):
         opener = urllib.request.build_opener()
-        opener.addheaders = [('User-agent', 'Mozilla/5.0')]  # Faking user
+        opener.addheaders = [('User-agent', 'Mozilla/6.0')]  # Faking user
         response = opener.open(url)
         html_content = response.read().decode('utf-8')
         return str(html_content)
@@ -120,6 +120,7 @@ class Product:
         self.log_dirname = Logger.get_log_dirname(self.prod_id)
 
         url_soup = UrlOperations.url_to_soup(prod_url)
+
         self.prod_name = self.construct_product_name(url_soup)
         self.avg_star_score = self.collect_avg_star_score(url_soup)
         self.prod_img_url = self.collect_prod_img_url(url_soup)
@@ -141,7 +142,7 @@ class Product:
 
     @staticmethod
     def collect_avg_star_score(url_soup):
-        avg_star_score = url_soup.find('span', class_='arp-rating-out-of-text a-color-base')
+        avg_star_score = url_soup.find('span', class_='a-icon-alt')
 
         if str(avg_star_score) == 'None':
             return '0.0'
@@ -214,7 +215,7 @@ class Product:
             n) + '?ie=UTF8&reviewerType=all_reviews&pageNumber=' + str(n)
         return nth_comment_url_page
 
-    def     construct_time_plot(self):
+    def construct_time_plot(self):
         if os.path.exists(DIR_PATH + self.prod_id + PROD_PLOT_POSTFIX):
             os.remove(DIR_PATH + self.prod_id + PROD_PLOT_POSTFIX)
 
@@ -678,8 +679,6 @@ class KNNClustering:
 
 
 def main(gui_connection: GuiConnections):
-
-
     url = gui_connection.product_url
 
     UrlOperations.check_hostname(url)
@@ -689,7 +688,6 @@ def main(gui_connection: GuiConnections):
     product.write_prod_img_to_file()
 
     product.construct_review_list(tries=3, delay_period=10, delay_secs=4)
-    #
     product.write_attrs_to_file()
     product.write_reviews_to_file()
     product.construct_time_plot()
@@ -725,7 +723,7 @@ if __name__ == "__main__":
     ###########################################
 
     gui_connection.set_product_url(
-        'https://www.amazon.com/Miracliy-Decorations-Artificial-Decoration-Environments/dp/B07KZ82F1R/ref=sr_1_76?s=pet-supplies&ie=UTF8&qid=1545524140&sr=1-76'
+        'https://www.amazon.com/Uniclife-Jellyfish-Ornament-Decoration-Aquarium/dp/B06XRNV4G2/ref=pd_sim_199_4/135-0368157-7886261?_encoding=UTF8&pd_rd_i=B06XRNV4G2&pd_rd_r=37d12b0a-7b01-4bfc-bc32-1c8dcd805811&pd_rd_w=M4Bo1&pd_rd_wg=Tl2A1&pf_rd_p=8958999c-906e-4b6b-80aa-4bc1f740ed92&pf_rd_r=TVGX4XQ29Y5Q3TZNKSCD&psc=1&refRID=TVGX4XQ29Y5Q3TZNKSCD'
     )
     main(gui_connection)
     DebugOp.exit_program(0, "Successful.")
