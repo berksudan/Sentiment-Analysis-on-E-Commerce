@@ -47,38 +47,6 @@ Note that, since this module does not use Amazon API to access the website, your
 - Screen of Sentiment Results
 ![Screen of Sentiment Results](./docs/product_sentiment_results_screen.png)
 
-## Folder Structure
-```bash
-$ tree -L 2
-.
-├── build.sh
-├── commentAnalyzer.py
-├── design.py
-├── design.ui
-├── dictionary_dataset.csv
-├── docs
-│   ├── enter_screen_product_id.png
-│   ├── enter_screen_product_url.png
-│   └── product_sentiment_results_screen.png
-├── gui_assets
-│   ├── 1.jpg
-│   ├── app_logo.png
-│   └── text_browser_background.png
-├── main.py
-├── product_files
-│   ├── B071H38K22.comments_processed.csv
-│   ├── B071H38K22.comments_unprocessed.csv
-│   ├── B071H38K22.image.jpg
-│   ├── B071H38K22.info.txt
-│   ├── B071H38K22.logs
-│   ├── B071H38K22.plot.png
-│   └── B071H38K22.totalSentScore.txt
-├── README.md
-└── run.sh
-
-4 directories, 20 files
-```
-
 ## Contributors
 - *Berk Sudan*, [GitHub](https://github.com/berksudan), [LinkedIn](https://linkedin.com/in/berksudan/)
 
