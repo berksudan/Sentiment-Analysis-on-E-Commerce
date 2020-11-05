@@ -1,0 +1,11 @@
+># Virtual Environment
+venv
+
+# Intellij IDEA IDE File
+.idea
+
+# Local Data
+data
+
+# Cached Python Files
+__pycache__
